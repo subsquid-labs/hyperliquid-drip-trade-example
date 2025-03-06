@@ -1,4 +1,4 @@
-# Hyperliquid NFT Marketplace Indexer
+# Drip.trade events on Hyperliquid
 
 This squid captures NFT marketplace events (`ItemSold` and `BidAccepted`) from the [Drip.trade](https://www.drip.trade/) marketplace on the Hyperliquid network. It processes these events and makes them queryable through a GraphQL API.
 
