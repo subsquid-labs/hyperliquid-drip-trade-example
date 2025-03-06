@@ -38,7 +38,7 @@ A GraphiQL playground will be available at [localhost:4350/graphql](http://local
 
 ## What's happening
 
-This project demos how to index data from Hyperliquid blockchain using Subsquid. Specifically, it tracks NFT trading activities from the Drip.trade marketplace, including:
+This project demos how to index data from Hyperliquid blockchain using SQD. Specifically, it tracks NFT trading activities from the Drip.trade marketplace, including:
 
 - `ItemSold` events: When NFTs are sold directly through listings
 - `BidAccepted` events: When bids for NFTs are accepted by sellers
