@@ -17,13 +17,16 @@ cd hyperliquid-drip-trade
 # 2. Install dependencies
 npm ci
 
-# 3. Start a Postgres database container and detach
+# 3. Create .env file
+mv .env.example .env
+
+# 4. Start a Postgres database container and detach
 sqd up
 
-# 4. Build and start the processor
+# 5. Build and start the processor
 sqd process
 
-# 5. The command above will block the terminal
+# 6. The command above will block the terminal
 #    being busy with fetching the chain data, 
 #    transforming and storing it in the target database.
 #
