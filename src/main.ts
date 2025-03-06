@@ -70,9 +70,7 @@ processor.run(db, async (ctx) => {
       }
     }
   }
-
-  await Promise.all([
-    ctx.store.insert(itemsSold),
-    ctx.store.insert(bidsAccepted),
-  ]);
+  
+  await ctx.store.insert(itemsSold);
+  await ctx.store.insert(bidsAccepted);
 });
