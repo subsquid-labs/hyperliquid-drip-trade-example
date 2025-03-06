@@ -1,0 +1,26 @@
+type ItemSold @entity {
+    id: ID!
+    block: Int!
+    seller: String! @index,
+    buyer: String! @index,
+    nftAddress: String! @index,
+    tokenId: BigInt!,
+    quantity: BigInt!,
+    pricePerItem: BigInt!,
+    paymentToken: String! @index,
+    txnHash: String!
+}
+
+type BidAccepted @entity {
+    id: ID!
+    block: Int!
+    seller: String! @index,
+    bidder: String! @index,
+    nftAddress: String! @index,
+    tokenId: BigInt!,
+    quantity: BigInt!,
+    pricePerItem: BigInt!,
+    paymentToken: String! @index,
+    txnHash: String!,
+    bidType: String!
+}
